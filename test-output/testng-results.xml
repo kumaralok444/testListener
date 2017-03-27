@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" total="4" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="mySuite" duration-ms="103042" started-at="2017-03-27T10:29:41Z" finished-at="2017-03-27T10:31:24Z">
+    <groups>
+    </groups>
+    <test name="test" duration-ms="25760" started-at="2017-03-27T10:29:41Z" finished-at="2017-03-27T10:30:07Z">
+      <class name="testListener.Test2">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:testListener.Test2@c39f790]" name="setUp" is-config="true" duration-ms="25492" started-at="2017-03-27T15:59:41Z" finished-at="2017-03-27T16:00:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCase1()[pri:0, instance:testListener.Test2@c39f790]" name="testCase1" duration-ms="111" started-at="2017-03-27T16:00:07Z" finished-at="2017-03-27T16:00:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase1 -->
+        <test-method status="FAIL" signature="testCase2()[pri:0, instance:testListener.Test2@c39f790]" name="testCase2" duration-ms="40" started-at="2017-03-27T16:00:07Z" finished-at="2017-03-27T16:00:07Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Troy Infotech] but found [Google]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Troy Infotech] but found [Google]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at testListener.Test2.testCase2(Test2.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:38)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase2 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testListener.Test2@c39f790]" name="tearDown" is-config="true" duration-ms="101" started-at="2017-03-27T16:00:07Z" finished-at="2017-03-27T16:00:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testListener.Test2 -->
+    </test> <!-- test -->
+    <test name="test1" duration-ms="103042" started-at="2017-03-27T10:29:41Z" finished-at="2017-03-27T10:31:24Z">
+      <class name="testListener.Test2">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:testListener.Test2@2b80d80f]" name="setUp" is-config="true" duration-ms="102886" started-at="2017-03-27T15:59:41Z" finished-at="2017-03-27T16:01:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCase1()[pri:0, instance:testListener.Test2@2b80d80f]" name="testCase1" duration-ms="93" started-at="2017-03-27T16:01:24Z" finished-at="2017-03-27T16:01:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase1 -->
+        <test-method status="FAIL" signature="testCase2()[pri:0, instance:testListener.Test2@2b80d80f]" name="testCase2" duration-ms="32" started-at="2017-03-27T16:01:24Z" finished-at="2017-03-27T16:01:24Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Troy Infotech] but found [Google]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Troy Infotech] but found [Google]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at testListener.Test2.testCase2(Test2.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:38)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase2 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testListener.Test2@2b80d80f]" name="tearDown" is-config="true" duration-ms="15" started-at="2017-03-27T16:01:24Z" finished-at="2017-03-27T16:01:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testListener.Test2 -->
+    </test> <!-- test1 -->
+  </suite> <!-- mySuite -->
+</testng-results>

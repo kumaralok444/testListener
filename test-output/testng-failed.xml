@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [mySuite]" parallel="tests">
+  <parameter name="browser" value="firefox"/>
+  <listeners>
+    <listener class-name="testListener.TEst1"/>
+  </listeners>
+  <test name="test(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testListener.Test2">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="testCase2"/>
+        </methods>
+      </class> <!-- testListener.Test2 -->
+    </classes>
+  </test> <!-- test(failed) -->
+  <test name="test1(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="testListener.Test2">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="testCase2"/>
+        </methods>
+      </class> <!-- testListener.Test2 -->
+    </classes>
+  </test> <!-- test1(failed) -->
+</suite> <!-- Failed suite [mySuite] -->
